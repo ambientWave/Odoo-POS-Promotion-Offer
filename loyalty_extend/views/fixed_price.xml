@@ -1,0 +1,16 @@
+<odoo>
+    <record id="loyalty_view_inherited" model="ir.ui.view">
+        <field name="name">loyalty</field>
+        <field name="model">loyalty.reward</field>
+        <field name="type">kanban</field>
+        <field name="inherit_id" ref="loyalty.loyalty_reward_view_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[contains(@class, 'o_loyalty_kanban_card_left')]" position="inside">
+            <t t-elif="record.reward_type.raw_value === 'buy_x_with_y'">
+                <a><i class="fa fa-cube fa-fw" title="Price Reward"/>Fixed Price=<field name="discount_max_amount"/></a>
+                <br/><br/><br/><br/>
+            </t>
+        </xpath>
+</field>
+    </record>
+</odoo>

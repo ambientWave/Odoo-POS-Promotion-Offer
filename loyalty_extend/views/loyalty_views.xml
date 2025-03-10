@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+<record id="view_loyalty_rule_form" model="ir.ui.view">
+    <field name="name">loyalty.rule.form</field>
+    <field name="model">loyalty.rule</field>
+    <field name="inherit_id" ref="loyalty.loyalty_rule_view_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='minimum_qty']" position="after">
+            <field name="Quantity"/>
+        </xpath>
+
+    </field>
+</record>
+
+
+    </data>
+</odoo>
