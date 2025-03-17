@@ -1,6 +1,6 @@
 # Odoo-POS-Promotion-Offer
 
-An odoo project that depends on POS module to provide instant quantity-based discount based on predefined criteria
+An odoo project that depends on POS module to provide instant quantity discount based on predefined criteria
 
 ## Workflow
 
